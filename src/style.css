@@ -1,7 +1,9 @@
 
 :root {
-    --main-bg-color: rgb(233, 184, 48);
-    --element-bg-color: rgb(247, 208, 136);
+    --body-bg-color: rgb(233, 184, 48);
+    --quote-bg-color: rgb(247, 208, 136);
+    --content-bg-color: white;
+    --header-footer-bg-color: rgb(247, 122, 5);
     font-family: arial;
 }
 
@@ -31,7 +33,7 @@ li {
 body {
     display: grid;
     grid-template-rows: 200px 1fr;
-    background-color: var(--main-bg-color);
+    background-color: var(--body-bg-color);
 }
 
 h1 {
@@ -49,7 +51,7 @@ button {
     padding: 20px;
     border: none;
     border-radius: 50px;
-    background-color:rgb(233, 184, 48);
+    background-color:var(--body-bg-color);
     margin: 0 30px;
 }
 
@@ -59,8 +61,29 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: var(--element-bg-color);
+    background-color: var(--header-footer-bg-color);
   
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > h1 {
+    background-color: var(--body-bg-color);
+    border: 10px rgb(168, 82, 1) solid;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.logo > img {
+    position: relative;
+    right: 30px;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    flex: 0;
 }
 
 img {
@@ -69,7 +92,7 @@ img {
 }
 
 article {
-    background-color: white;
+    background-color: var(--content-bg-color);
 }
 
 .biography {
@@ -93,10 +116,25 @@ article {
 }
 
 .quote {
-    background-color: var(--element-bg-color);
+    background-color: var(--quote-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--header-footer-bg-color);
+}
+
+.credits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.credits > p {
+    justify-self: center;
+}

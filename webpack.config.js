@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: "development", //What mode we are in (production, development, etc.)
-    entry: "./src/script.js", //"entry point" which is the highest on the dependency graph for imported files
+    entry: "./src/index.js", //"entry point" which is the highest on the dependency graph for imported files
     output: {
-        filename: "script.js", //The output controls where the bundle's js is going and what the name of the bundled js is going to be.
+        filename: "index.js", //The output controls where the bundle's js is going and what the name of the bundled js is going to be.
         path: path.resolve(__dirname, "dist"),
         clean: true,
     },
