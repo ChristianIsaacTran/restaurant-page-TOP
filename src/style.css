@@ -4,6 +4,7 @@
     --quote-bg-color: rgb(247, 208, 136);
     --content-bg-color: white;
     --header-footer-bg-color: rgb(247, 122, 5);
+    --border-orange-color: rgb(168, 82, 1);
     font-family: arial;
 }
 
@@ -24,6 +25,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: center;
 }
 
 li {
@@ -49,7 +51,7 @@ nav {
 button {
     font-size: 2.2rem;
     padding: 20px;
-    border: none;
+    border: 5px var(--border-orange-color) solid;
     border-radius: 50px;
     background-color:var(--body-bg-color);
     margin: 0 30px;
@@ -72,7 +74,7 @@ header {
 
 .logo > h1 {
     background-color: var(--body-bg-color);
-    border: 10px rgb(168, 82, 1) solid;
+    border: 10px var(--border-orange-color) solid;
     padding: 10px;
     flex-shrink: 0;
 }

@@ -3,7 +3,7 @@ import image2 from "./imgs/pexels-allanglezg-31650326.jpg";
 import image3 from "./imgs/pexels-valeriya-1199957.jpg";
 import image4 from "./imgs/pexels-valeriya-1639557.jpg";
 
-function Content() {
+function home() {
 
     function homeLoad() {
         //Generate new HTML elements and containers
@@ -59,4 +59,4 @@ function Content() {
     return {homeLoad};
 }
 
-export default Content;
+export default home;
