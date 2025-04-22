@@ -5,7 +5,7 @@ import image4 from "./imgs/pexels-valeriya-1639557.jpg";
 
 function Content() {
 
-    function initPageLoad() {
+    function homeLoad() {
         //Generate new HTML elements and containers
         const article = document.createElement("article");
         const biographyContainer = document.createElement("div");
@@ -56,7 +56,7 @@ function Content() {
         mainContent.appendChild(quoteContainer);
     }
 
-    return {initPageLoad};
+    return {homeLoad};
 }
 
 export default Content;
