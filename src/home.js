@@ -5,20 +5,22 @@ import image4 from "./imgs/pexels-valeriya-1639557.jpg";
 
 function home() {
 
+    //Generate new HTML elements and containers
+    const article = document.createElement("article");
+    const biographyContainer = document.createElement("div");
+    const bioHeader = document.createElement("h2");
+    const biography = document.createElement("p");
+    const imageList = document.createElement("ul");
+    const quoteContainer = document.createElement("div");
+    const quote = document.createElement("h2");
+    const emphasis = document.createElement("em");
+    const burgerImg1 = document.createElement("img");
+    const burgerImg2 = document.createElement("img");
+    const burgerImg3 = document.createElement("img");
+    const burgerImg4 = document.createElement("img");
+
     function homeLoad() {
-        //Generate new HTML elements and containers
-        const article = document.createElement("article");
-        const biographyContainer = document.createElement("div");
-        const bioHeader = document.createElement("h2");
-        const biography = document.createElement("p");
-        const imageList = document.createElement("ul");
-        const quoteContainer = document.createElement("div");
-        const quote = document.createElement("h2");
-        const emphasis = document.createElement("em");
-        const burgerImg1 = document.createElement("img");
-        const burgerImg2 = document.createElement("img");
-        const burgerImg3 = document.createElement("img");
-        const burgerImg4 = document.createElement("img");
+        
 
         //Assign image paths
         burgerImg1.src = image1;
