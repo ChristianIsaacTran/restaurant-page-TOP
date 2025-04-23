@@ -55,8 +55,8 @@ function home() {
         article.setAttribute("class", "home-container");
         article.appendChild(biographyContainer);
         article.appendChild(imageList);
+        article.appendChild(quoteContainer);
         mainContent.appendChild(article);
-        mainContent.appendChild(quoteContainer);
     }
 
     return { homeLoad };
