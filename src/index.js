@@ -5,7 +5,7 @@ import home from "./home.js";
 
 //Initial page load module
 const homeManage = home();
-homeManage.homeLoad();
+// homeManage.homeLoad();
 
 
 
