@@ -18,10 +18,11 @@ function home() {
     const burgerImg2 = document.createElement("img");
     const burgerImg3 = document.createElement("img");
     const burgerImg4 = document.createElement("img");
+    const mainContent = document.querySelector("#content");
 
+    //Generate home page tab
     function homeLoad() {
-        
-
+    
         //Assign image paths
         burgerImg1.src = image1;
         burgerImg2.src = image2;
@@ -53,7 +54,6 @@ function home() {
         article.setAttribute("class", "summary");
         article.appendChild(biographyContainer);
         article.appendChild(imageList);
-        const mainContent = document.querySelector("#content");
         mainContent.appendChild(article);
         mainContent.appendChild(quoteContainer);
     }
