@@ -52,7 +52,7 @@ function home() {
         quoteContainer.appendChild(quote);
 
         //Append the containers to the main content container
-        article.setAttribute("class", "summary");
+        article.setAttribute("class", "home-container");
         article.appendChild(biographyContainer);
         article.appendChild(imageList);
         mainContent.appendChild(article);

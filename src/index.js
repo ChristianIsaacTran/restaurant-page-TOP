@@ -3,12 +3,17 @@
 import "./style.css";
 import home from "./home.js";
 import menu from "./menu.js";
+import contact from "./contact.js";
 
 //Initial page load module
 const homeManage = home();
 // homeManage.homeLoad();
 const menuManage = menu();
-menuManage.menuLoad();
+// menuManage.menuLoad();
+const contactManage = contact();
+contactManage.contactLoad();
+
+
 
 
 
